@@ -1,0 +1,164 @@
+package 图形界面练习;
+
+import javax.swing.*;
+import java.io.*;
+import java.math.RoundingMode;
+import java.net.*;
+import java.text.DecimalFormat;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.event.*;
+public class Liaotian extends JFrame implements ActionListener{
+	private JTextArea jta1, tf;
+	private JButton jb1/*fasong*/,jb2/**/,jb3;
+	private String str1;
+//	private Socket socket,client,fsocket;
+//	private BufferedReader br,br1;
+//	private BufferedWriter bw;
+//	private PrintWriter pw;
+//	private DataInputStream dis;  
+//  private FileOutputStream fos; 
+//	private FileInputStream fis; 
+//	private DataOutputStream dos;
+//	private String filepath;
+public static void main(String[] arg){
+//	System.setProperty( "Quaqua.tabLayoutPolicy","wrap");
+//	try{
+//	JFrame.setDefaultLookAndFeelDecorated(true);
+//	UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//	}catch(Exception e){}
+	Liaotian a = new Liaotian("kkk");
+}
+public Liaotian(String name) {
+			
+		setTitle("A talk with "+name);
+		JPanel face = new JPanel();
+		JPanel key = new JPanel();
+//		JButton jb2 = new JButton("取消");
+		setBounds(0, 0, 600, 600);
+		setResizable(false);
+//		tfTxt.setBounds(0, 0, 400, 400);
+//		tfTxt.setBackground(Color.WHITE);
+//		tfTxt.setEditable(false);
+//		tarea.setBounds(0,400,400,200);
+//		tarea.setBackground(Color.pink);
+		face.setBounds(400,0 , 200, 400);
+		face.setBackground(Color.GRAY);
+		key.setBounds(400, 400, 200, 200);
+		key.setLayout(null);
+		key.add(jb1);
+		key.add(jb2);
+//		add(tfTxt); 
+//	    add(tarea); 
+	    add(face);
+
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		jb1=new JButton("发送");
+		jb2=new JButton("文件传输");
+		jb3=new JButton("表情");
+		jb1.setBounds(450, 450, 100, 20);
+		jb2.setBounds(450, 580, 100, 20);
+		jb3.setBounds(450, 520, 100, 20);
+		key.add(jb1);
+		key.add(jb2);
+		key.add(jb3);
+		add(key);
+		jb1.addActionListener(this);
+		jb2.addActionListener(this);
+		jb3.addActionListener(this);
+		
+		
+		
+		
+
+
+
+		
+		
+		
+		setVisible(true);
+}
+@Override
+public void actionPerformed(ActionEvent e) {
+	if(e.getActionCommand()=="发送") {
+		// TODO Auto-generated method stub
+		str1=tf.getText();
+		   try {
+			 
+//			 bw=new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+//			 pw=new PrintWriter(bw,true);
+//			 pw.println(str1);
+			 jta1.append("你说："+str1+"\n");
+			 tf.setText("");
+		}catch(Exception e1) {
+			e1.printStackTrace();
+		}
+	}
+	if(e.getActionCommand()=="表情") {
+		/**
+		 * **************************************
+		 * 表情按钮点击后进行的操作
+		 * **************************************
+		 */
+		System.out.println("biaoqing anniu jianji");
+	}
+	if(e.getActionCommand()=="文件传输") {
+		System.out.println("wenjian chuangshu qidong");
+		// TODO Auto-generated method stub
+//		JFileChooser jfc=new JFileChooser();  
+//		File file;
+//        jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );  
+//        jfc.showDialog(new JLabel(), "选择");  
+//        file=jfc.getSelectedFile();  
+//        if(file.isDirectory()){  
+//            System.out.println("文件夹:"+file.getAbsolutePath()); 
+//            filepath=file.getAbsolutePath();
+//        }else if(file.isFile()){  
+//            System.out.println("文件:"+file.getAbsolutePath());  
+//            filepath=file.getAbsolutePath();
+//        }  
+//        System.out.println(jfc.getSelectedFile().getName());  
+//        if(file.exists()) {
+//        	try {
+//        	fis = new FileInputStream(file);  
+//            dos = new DataOutputStream(client.getOutputStream());  
+//
+//            // 文件名和长度  
+//            dos.writeUTF(file.getName());  
+//            dos.flush();  
+//            dos.writeLong(file.length());  
+//            dos.flush();  
+//            
+//            jta1.append("======== 开始传输文件 ========"+"\n");  
+//            byte[] bytes = new byte[1024];  
+//            int length = 0;  
+//            long progress = 0;  
+//            while((length = fis.read(bytes, 0, bytes.length)) != -1) {  
+//                dos.write(bytes, 0, length);  
+//                dos.flush();  
+//                progress += length;  
+////                jta1.append("| " + (100*progress/file.length()) + "% |");  
+//            }   
+//            jta1.append("======== 文件传输成功 ========"+"\n"); 
+////            client.shutdownOutput();
+//		}catch (Exception e) {  
+//            e.printStackTrace();
+//	    }
+//	}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+}
+		

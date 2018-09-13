@@ -1,0 +1,10 @@
+package 经典问题;
+
+public class 无重复数字问题 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

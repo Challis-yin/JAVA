@@ -1,0 +1,23 @@
+package ºúÂÒÍæ;
+//import java.util.Scanner;
+public class ºúÂÒÍæ {
+public static void main(String[] args) {
+
+//	int n;
+//double i = 0;
+//	Scanner scanner = new Scanner(System.in);
+//	n = scanner.nextInt();
+int a = 9;
+double b;
+   b = Math.pow(a, 2);
+System.out.println(b);
+//for (;a<=n;a++)
+   // {
+   //     if (a%2==1)
+   //     i = i+1.0/(3*a-2);
+   //     else
+   //     i = i-1.0/(3*a-2);
+    }//System.out.println(i);
+    }
+    //write your code
+//}

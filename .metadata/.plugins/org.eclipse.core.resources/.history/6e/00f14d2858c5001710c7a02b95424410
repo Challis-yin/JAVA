@@ -1,0 +1,21 @@
+package ºúÂÒÍæ;
+import java.util.Scanner;
+public class ºúÂÒÍæ {
+public static void main(String[] args) {
+int s,a,;
+double i = 0;
+s = 5;
+a = 1;
+while(a<s);
+{if (a%2==1)
+i = i+2/(a+5);
+else;
+i = i+2/(a+1);
+a++;}
+System.out.println(i);
+	
+
+	
+
+}
+}

@@ -1,0 +1,17 @@
+package 再次乱玩;
+
+public class 再次乱玩 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int time1,time2;
+time1 = 712;
+time2 = 1423;
+int a,b;
+b = time2-time1;
+a = b/100;
+b = b - a*100;
+System.out.println("time"+a+b);
+	}
+
+}

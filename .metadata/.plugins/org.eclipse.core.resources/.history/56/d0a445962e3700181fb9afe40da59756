@@ -1,0 +1,20 @@
+package Õº–ŒΩÁ√Ê¡∑œ∞;
+	import java.awt.*;
+	import javax.swing.*;
+
+	public class Draw extends JFrame{
+
+		public Draw() {
+			new JFrame();
+			setBounds(0, 0, 600, 400);
+//			addMouseListener(new MouseMonitor());
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			setVisible(true);
+		}
+		public static void main(String[] arg) {
+			Draw a = new Draw();
+			
+		}
+		}
+	
+	

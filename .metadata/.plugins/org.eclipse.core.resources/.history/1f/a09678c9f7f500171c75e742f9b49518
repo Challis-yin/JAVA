@@ -1,0 +1,25 @@
+package ºúÂÒÍæ;import java.util.*;
+
+public class ºúÂÒÍæ {
+	static public  void main(String[] args) {
+    int a[] = new int[3];
+    Scanner in = new Scanner(System.in);
+    for(int i = 0;i<3;i++) {
+    	a[i] = in.nextInt();
+    }
+    int shuzi = a[0];
+    int index = 0;
+    int i = 0;int jilu = 0;
+    while(i<3) {
+    	index = i;
+    	while(index<2) {
+    		if(shuzi < a[index+1]) {
+    			shuzi = a[index+1];
+    			jilu = index+1;
+    		}
+    		index++;
+    	}
+    	i++;int kkk = a[0];a[0] = shuzi;a[jilu] = kkk;index = 0;
+    }
+	}
+}

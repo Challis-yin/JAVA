@@ -1,0 +1,18 @@
+package 胡乱玩;
+
+import javax.annotation.processing.FilerException;
+
+public class 胡乱玩 {
+public static void main(String[] args) {
+	try{
+		System.out.println(2/0);
+	}
+	catch(ArithmeticException a){
+		System.out.println("您的除数为零。。。。。。");
+	}
+	catch(ArrayIndexOutOfBoundsException dsd) {
+		System.out.println("不正常啊");
+	}
+	System.out.println("下次注意");
+}
+}

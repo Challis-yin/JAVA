@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/JAVA的真正第一次作业/src/JAVA的第一次课后作业.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="JAVA的第一次课后作业"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JAVA的真正第一次作业"/>
+</launchConfiguration>

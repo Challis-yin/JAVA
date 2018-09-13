@@ -1,0 +1,8 @@
+package Êý¾Ý¿â;
+import java.sql.*;
+public class database {
+	public static void main(String[] arg) {
+		try {
+//		Class.forName(¡°com.mysql.JDBCDriver¡±)£»}
+	}
+}

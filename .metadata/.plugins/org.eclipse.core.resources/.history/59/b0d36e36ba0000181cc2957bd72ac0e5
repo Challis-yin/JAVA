@@ -1,0 +1,17 @@
+package 排序;
+
+public class sort {
+		public static void sorting(int[] a) {
+			int min;int chucun;
+			for(int i=0;i<a.length-1;i++) {
+				min = i;
+				for(int scan = i+1;scan<a.length;scan++)
+					if(a[min]>a[scan])
+						min = scan;
+				chucun = a[min];
+				a[min] = a[i];
+				a[i] = chucun;
+			}
+			System.out.println("排序已经完成");
+		}
+}

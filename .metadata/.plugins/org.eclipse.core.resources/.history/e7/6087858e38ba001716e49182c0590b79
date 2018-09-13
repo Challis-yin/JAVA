@@ -1,0 +1,12 @@
+package 再次乱玩;
+
+public class 再次乱玩 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String city = "landon";
+int a = (11);
+System.out.print("jjjj"+city+a);
+	}
+
+}

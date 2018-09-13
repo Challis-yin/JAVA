@@ -1,0 +1,39 @@
+package อ๘ฟฮสตั้;
+import java.util.*;
+class BMW{
+    public BMW(){
+        System.out.println("This is BMW");
+        
+    }
+    
+}
+class Das{
+    public Das(){
+        System.out.println("This is Das");
+    }
+}
+class Maze{
+    public Maze(){
+        System.out.println("This is Maze");
+    }
+}
+ class Main {
+
+	public static void main(String[] args) {
+		//write code here
+        Scanner in = new Scanner(System.in);
+        int a;
+        a = in.nextInt();
+        BMW k;
+        Das w;Maze q;
+		if(a=='B')
+        k = new BMW();
+        if(a=='D')
+        w = new Das();
+        if(a=='M')
+         q = new Maze();
+    }
+}
+public class kkkkk {
+
+}

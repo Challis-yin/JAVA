@@ -1,0 +1,18 @@
+package TankWar;
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.JFrame;
+public class tank0 extends JFrame{
+	public void LanchFrame() {
+		this.setLocation(400,300);
+		this.setBackground(Color.green);
+		this.setResizable(false);
+		this.setVisible(true);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String [] arg) {
+		tank0 tank = new tank0();
+		tank.LanchFrame();
+	}
+}

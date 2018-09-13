@@ -1,0 +1,64 @@
+package 图形界面练习;
+import java.awt.*;
+import javax.swing.*;
+public class 尝试 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		denglu a = new denglu();
+	}
+
+}
+class denglu{
+	public denglu() {
+		JFrame frame = new JFrame("MINI QQ");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JPanel primary = new JPanel();
+		primary.setBackground(Color.GREEN);
+		primary.setPreferredSize(new Dimension(355,200));
+		
+		JLabel l = new JLabel();
+		ImageIcon i = new ImageIcon("f:/触不可及/timg.jpg");
+		l.setIcon(i);
+		//导入背景图片**
+		
+		JCheckBox bc = new JCheckBox("记住密码");
+		frame.add(bc);
+		bc.setBounds(50,100,80,20);//此为建立一个可选的框
+		
+		JLabel lable = new JLabel("用户名");
+		JLabel lable2 = new JLabel("密码");
+		lable.setFont(new   java.awt.Font("Dialog",   0,   15)); 
+		lable2.setFont(new   java.awt.Font("Dialog",   0,   15));  
+		lable.setBounds(50,50,100,30);
+		lable2.setBounds(50,70,100,30);
+		l.setBounds(0, 0, i.getIconWidth(), i.getIconHeight());
+		//建立多个文字块
+		
+		JTextArea jta = new JTextArea("");
+        jta.setBounds(150, 58, 20, 20);
+        JPasswordField jta2 = new JPasswordField("");
+        jta2.setBounds(150, 78, 20, 20);
+        
+		JButton jb1 = new JButton("登录");
+		JButton jb2 = new JButton("取消");
+		jb2.setContentAreaFilled(false);
+		jb1.setContentAreaFilled(false);
+		jb1.setBounds(50,130, 80, 20);
+		jb2.setBounds(160,130,80,20);
+		//建立多个按钮
+		
+		frame.add(lable);
+		frame.add(lable2);
+		frame.add(jb1);
+		frame.add(jb2);
+		frame.add(l);
+		frame.add(jta);
+		frame.add(jta2);
+		
+		frame.getContentPane().add(primary);
+		frame.pack();
+		frame.setVisible(true);
+				
+	}
+}

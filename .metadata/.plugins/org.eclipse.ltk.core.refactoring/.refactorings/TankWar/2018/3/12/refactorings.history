@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;TankWar.tank.KeyPressed(...)&apos;&#x0D;&#x0A;- Original project: &apos;TankWar&apos;&#x0D;&#x0A;- Destination element: &apos;TankWar.tank.KeyPressed(...)&apos;&#x0D;&#x0A;- Original element: &apos;TankWar.tank.KeyPressed(...)&apos;" description="Copy method" destination="/src&lt;TankWar{tank.java[tank~KeyPressed~QKeyEvent;" element1="/src&lt;TankWar{tank.java[tank~KeyPressed~QKeyEvent;" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1521353890825" version="1.0"/>
+</session>

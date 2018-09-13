@@ -1,0 +1,26 @@
+package TankWar;
+import java.awt.*;
+import java.util.List;
+
+import TankWar.tank.Direction;
+
+public class Wall {
+	int x,y,width = 20,length = 80;
+	public Wall(int x,int y) {
+		this.x = x;
+		this.y = y;
+	}
+	public void draw(Graphics g) {
+		Color c = g.getColor();
+		g.setColor(Color.WHITE);
+		g.fillRect(x, y, length, width);
+		g.setColor(c);
+	}
+	public Rectangle getRec() {
+		return new Rectangle(x,y,length,width);
+	}
+	void hitWall(tank t) {
+		if(this.getRec().intersects(t.getRec())&&!t.good)
+			t.dir = Direction.STOP;
+	}
+}

@@ -1,0 +1,23 @@
+package ºúÂÒÍæ;
+import java.util.*;
+
+public class kkk {
+
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int k = in.nextInt();
+        int p = 0;
+        for(int i = 0;i<k;i++)
+        {
+            String a = in.next();
+            for(int q = 0;q<a.length();q++)
+            {
+                char n = a.charAt(q);
+                if(n>='A'&&n<='Z'&&n!='A'&&n!='E'&&n!='I'&&n!='U'&&n!='O')
+                p++;
+            }
+            System.out.println(p);
+        }
+        //write your own codes
+    }
+}

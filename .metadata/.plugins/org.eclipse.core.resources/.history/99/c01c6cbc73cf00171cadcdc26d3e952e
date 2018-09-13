@@ -1,0 +1,28 @@
+package ºúÂÒÍæ;
+import java.util.*;
+
+public class kkk {
+
+	public static void main(String[] args) {
+		int a = 1,b = 1,c = 1,d;
+	    for (;a<100000;a++)
+	        {
+	            for(;b<1000000;b++)
+	              {
+	                  if(a+100==b)
+	                     {System.out.println(a);
+	                         //for(;c<1000000;c++)
+	                         //{
+	                             //if(a+168==c*c)
+	                            // System.out.println(a);
+	                        // }
+	                     }
+	               
+	              }
+	              
+	              
+	        }
+	        
+	       //write your own codes
+	    }
+	}

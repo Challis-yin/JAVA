@@ -1,0 +1,10 @@
+package ºúÂÒÍæ;
+
+public class ºúÂÒÍæ {
+public static void main(String[] args) {
+	System.exit(0);
+	System.out.print(get.next);
+}class get{
+	public static final int next = 0;
+}
+}

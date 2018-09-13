@@ -1,0 +1,65 @@
+package Õº–ŒΩÁ√Ê¡∑œ∞;
+	import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.MouseAdapter;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import org.w3c.dom.events.MouseEvent;
+
+	public class Draw extends JFrame{
+		pai k = new pai();
+	int x ,y ;int width = 20,height = 20;
+	
+		public void draw(Graphics g) {
+			Color c = g.getColor();
+			g.setColor(Color.black);
+			g.drawRect(x, y, width, height);
+			g.setColor(c);
+		}
+		public Draw() {
+			new JFrame();
+			setBounds(0, 0, 600, 400);
+			addMouseListener(new MouseMonitor());
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			add(k);
+			new Thread(new PaintThread()).start(); 
+			setVisible(true);
+		}
+		class pai extends JPanel{
+			public void paint(Graphics g) {
+				draw(g);
+			}
+		}
+		public static void main(String[] arg) {
+			Draw a = new Draw();
+			
+		}
+		class MouseMonitor extends MouseAdapter{
+			public void mousePressed(MouseEvent e) {
+				x = e.getScreenX();
+				y = e.get
+			}
+		}
+		private class PaintThread implements Runnable{
+
+			public void run() {
+				while(true) {
+					repaint();
+					try {
+						Thread.sleep(50);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	

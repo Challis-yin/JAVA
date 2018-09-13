@@ -1,0 +1,24 @@
+package ºúÂÒÍæ;
+import java.util.Scanner;
+public class ºúÂÒÍæ {
+public static void main(String[] args) {
+	int a,b,c,d,e,f,g,h,i;
+	int sum = 0;
+	a = 10000;b = 1001;
+while(b<a);
+{c = b%10;
+ d = b/10;
+ e = d%10;
+ f = d/10;
+ g = f%10;
+ h = b/1000;
+ i = h+g+e+c;
+ if(i%25==0);
+ sum = sum + b;
+ b=b+2;
+	 
+	}
+System.out.println(sum);
+System.out.println("kkkkkkk");
+}
+}

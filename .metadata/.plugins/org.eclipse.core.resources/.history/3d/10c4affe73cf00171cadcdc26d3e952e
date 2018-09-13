@@ -1,0 +1,26 @@
+package ºúÂÒÍæ;
+import java.util.*;
+
+public class kkk {
+
+	public static void main(String[] args) {
+		 Scanner in = new Scanner (System.in);
+	        String a;
+	        a = in.nextLine();
+	        int i,b,k;
+	        for(i=0;i<a.length();i++)
+	        {
+	            char h = a.charAt(i);
+	            if(h>='A'&&h<='Z')
+	              {h = (char)(h + 32);
+	            System.out.print(h);
+	              }if(h>='a'&&h<='z')
+	            {
+	            	h = (char)(h-32);
+	            	System.out.print(h);
+	            }
+	        }
+	        //write your own codes
+	    }
+
+}

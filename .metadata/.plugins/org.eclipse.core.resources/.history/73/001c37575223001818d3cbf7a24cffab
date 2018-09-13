@@ -1,0 +1,41 @@
+package 图形界面练习;
+import java.awt.*;
+import javax.swing.*;
+public class 尝试 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("MINI QQ");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JPanel primary = new JPanel();
+		//primary.setBackground(Color.GREEN);
+		primary.setPreferredSize(new Dimension(300,200));
+		
+		JLabel l = new JLabel();
+		ImageIcon i = new ImageIcon("f:/触不可及/海贼.png");
+		l.setIcon(i);
+		
+		JLabel lable = new JLabel("用户名");
+		JLabel kkk = new JLabel("密码");
+		lable.setBounds(50,50,100,30);
+		kkk.setBounds(50,70,28,30);
+		l.setBounds(0, 0, i.getIconWidth(), i.getIconHeight());
+		
+		JButton jb1 = new JButton("登录");
+		JButton jb2 = new JButton("取消");
+		jb1.setBounds(50,120, 80, 20);
+		jb2.setBounds(160,120,80,20);
+		
+		frame.add(lable);
+		frame.add(kkk);
+		frame.add(jb1);
+		frame.add(jb2);
+		frame.add(l);
+		
+		frame.getContentPane().add(primary);
+		frame.pack();
+		frame.setVisible(true);
+				
+	}
+
+}

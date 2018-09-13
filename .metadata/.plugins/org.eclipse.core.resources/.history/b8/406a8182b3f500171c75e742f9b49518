@@ -1,0 +1,29 @@
+package ºúÂÒÍæ;
+
+import javax.annotation.processing.FilerException;
+class fuqin{
+	private int i = 0;
+	public fuqin() {
+		i = 9;
+	}
+	public int get () {
+		return i;
+	}
+}
+class kkkk extends fuqin{
+	public kkkk() {
+		
+	}
+	public int get() {
+		return super.get()+1;
+	}
+	}
+public class ºúÂÒÍæ {
+	static public  void main(String[] args) {
+	fuqin a = new kkkk();
+	kkkk s = (kkkk)a;
+	System.out.print(s.get());
+}
+	
+	
+}
